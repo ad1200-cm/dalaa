@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050306" />
+    <title>دلع</title>
+    <meta
+      name="description"
+      content="حكاية حب رومانسية سينمائية لذكرى 13.10.2024 و25.06.2025 و13.10.2026"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-noise"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <div
+      class="music-control"
+      id="musicToggle"
+      aria-label="تشغيل الموسيقى"
+      title="الموسيقى"
+    >
+      <span class="music-icon">♫</span>
+      <span class="visualizer"> <i></i><i></i><i></i><i></i> </span>
+    </div>
+
+    <nav class="progress-indicator" aria-label="مؤشر الصفحات">
+      <button class="progress-item active" data-page="0" aria-label="الصفحة 01">
+        01
+      </button>
+      <button class="progress-item" data-page="1" aria-label="الصفحة 02">
+        02
+      </button>
+      <button class="progress-item" data-page="2" aria-label="الصفحة 03">
+        03
+      </button>
+      <button class="progress-item" data-page="3" aria-label="الصفحة 04">
+        04
+      </button>
+      <button class="progress-item" data-page="4" aria-label="الصفحة 05">
+        05
+      </button>
+      <button class="progress-item" data-page="5" aria-label="الصفحة 06">
+        06
+      </button>
+      <button class="progress-item" data-page="6" aria-label="الصفحة 07">
+        07
+      </button>
+      <button class="progress-item" data-page="7" aria-label="الصفحة 08">
+        08
+      </button>
+      <button class="progress-item" data-page="8" aria-label="الصفحة 09">
+        09
+      </button>
+    </nav>
+
+    <div class="page-shell">
+      <div class="page-transition" id="pageTransition"></div>
+      <div class="spark-layer" id="sparkLayer"></div>
+
+      <section class="page page-1 active" data-page="0">
+        <div class="scene-inner welcome-scene">
+          <div class="welcome-stack">
+            <div class="tiny-date fade-up delay-1">13.10.2024</div>
+            <div class="story-line fade-up delay-2">من هنا بدأت الحكاية...</div>
+            <div class="name-line fade-up delay-3">دلع</div>
+            <h1 class="main-title fade-up delay-4">سنتان...</h1>
+            <div class="subtitle fade-up delay-5">من أول يوم عرفتك فيه...</div>
+          </div>
+
+          <button
+            class="cta-button"
+            id="storyButton"
+            aria-label="افتحي الحكاية"
+          >
+            <span class="button-label">افتحي الحكاية</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="page page-2" data-page="1">
+        <div class="scene-inner story-block">
+          <div class="tiny-date">13.10.2024</div>
+          <div class="kicker">البداية</div>
+          <h2 class="story-heading">
+            في 13 أكتوبر 2024،<br />
+            بدأت معرفة يمكن وقتها ما كنا نعرف إلى أين ممكن توصل.
+          </h2>
+          <div class="gold-divider"></div>
+          <div class="floating-heart tiny-heart">♥</div>
+        </div>
+      </section>
+
+      <section class="page page-3" data-page="2">
+        <div class="scene-inner confession-scene">
+          <div class="tiny-date">25.06.2025</div>
+          <div class="dramatic-wait">أول اعتراف</div>
+          <h2 class="confession-title">اليوم اللي صار فيه شيء مختلف...</h2>
+          <p class="confession-copy">
+            كلام انحكى لأول مرة،<br />
+            وغيّر شكل الحكاية.
+          </p>
+          <div class="heart-backdrop">♥</div>
+          <div class="date-link"></div>
+        </div>
+      </section>
+
+      <section class="page page-4" data-page="3">
+        <div class="scene-inner reveal-scene">
+          <h2 class="page-title">ومن بعدها...</h2>
+          <div class="reveal-stack">
+            <div class="reveal-line">قرب أكثر.</div>
+            <div class="reveal-line">تفاصيل أكثر.</div>
+            <div class="reveal-line">ذكريات أكثر.</div>
+            <div class="reveal-line">وأشياء صارت تعني أكثر.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-5" data-page="4">
+        <div class="scene-inner stats-scene">
+          <div class="stats-header">مرّ من وقتها...</div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">24</div>
+              <div class="stat-label">شهر</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">2</div>
+              <div class="stat-label">سنة</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">730</div>
+              <div class="stat-label">يوم</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">104</div>
+              <div class="stat-label">أسبوع</div>
+            </div>
+
+            <div class="stat-card stat-card-wide">
+              <div class="stat-number">+1,000,000</div>
+              <div class="stat-label">دقيقة</div>
+            </div>
+
+            <div class="stat-card stat-card-wide">
+              <div class="stat-number">+17,000</div>
+              <div class="stat-label">ساعة</div>
+            </div>
+          </div>
+
+          <div class="stats-footer">سنتان</div>
+        </div>
+      </section>
+
+      <section class="page page-6" data-page="5">
+        <div class="scene-inner memory-scene">
+          <h2 class="page-title">تفاصيل صغيرة...</h2>
+          <div class="memory-grid">
+            <div class="memory-card">الضحكة</div>
+            <div class="memory-card">المحادثات</div>
+            <div class="memory-card">الأيام الحلوة</div>
+            <div class="memory-card">الزعل</div>
+            <div class="memory-card">الصلح</div>
+            <div class="memory-card">التفاصيل الصغيرة</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-7" data-page="6">
+        <div class="scene-inner letter-scene">
+          <div class="letter-header">إلى دلع...</div>
+          <div class="letter-subheader">عندي شيء بدي أحكيلك إياه.</div>
+
+          <div class="envelope-wrap" id="envelopeWrap">
+            <div class="envelope" id="envelope">
+              <div class="seal"><span>♥</span></div>
+              <button class="open-letter-btn" id="openLetterBtn">
+                افتحي الرسالة
+              </button>
+            </div>
+          </div>
+
+          <article class="letter-paper" id="letterPaper" aria-live="polite">
+            <p>دلع،</p>
+            <p>
+              سنتين مرّوا من أول يوم عرفتك فيه،<br />وسنتين فيهم تفاصيل كثيرة
+              يمكن ما بنقدر نحكيها كلها بكلمتين.
+            </p>
+            <p>بدأت الحكاية في 13.10.2024،</p>
+            <p>
+              وبعدها جاء 25.06.2025،<br />اليوم اللي صار فيه أول اعتراف،<br />ومن
+              بعدها صارت الحكاية تحمل تفاصيل أكثر.
+            </p>
+            <p>ضحكنا،<br />زعلنا،<br />تصالحنا،<br />وعرفنا بعض أكثر.</p>
+            <p>واليوم أنا بس حاب أحكي لك شيء بسيط:</p>
+            <p>أنا مبسوط إنك كنتِ جزء من هالسنتين. ❤️</p>
+            <p>
+              وممتن لكل لحظة،<br />ولكل ضحكة،<br />ولكل موقف،<br />ولكل ذكرى.
+            </p>
+            <p>كل سنة وإنتِ من أجمل التفاصيل اللي مرّت بحياتي.</p>
+            <div class="letter-dates">
+              <span>13.10.2024</span>
+              <span>❤️</span>
+              <span>25.06.2025</span>
+              <span>❤️</span>
+              <span>13.10.2026</span>
+            </div>
+            <p class="closing-line">سنتان...<br />ولسه الحكاية ما خلصت.</p>
+            <button class="close-letter-btn" id="closeLetterBtn">
+              إغلاق الرسالة
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="page page-8" data-page="7">
+        <div class="scene-inner final-words-scene">
+          <div class="word-glow">دلع</div>
+        </div>
+      </section>
+
+      <section class="page page-9" data-page="8">
+        <div class="scene-inner final-scene">
+          <div class="large-heart">♥</div>
+          <div class="final-dates">
+            <span>13.10.2024</span>
+            <span>25.06.2025</span>
+            <span>13.10.2026</span>
+          </div>
+          <h2 class="final-title">سنتان ❤️</h2>
+          <div class="final-message">شكرًا لأنك كنتِ جزءًا من الحكاية.</div>
+          <div class="final-name">دلع</div>
+          <div class="final-signature">— 13.10.2026 —</div>
+        </div>
+      </section>
+    </div>
+
+    <button class="secret-heart" id="secretHeart" aria-label="رسالة سرية">
+      ♥
+    </button>
+
+    <div class="secret-overlay" id="secretOverlay" aria-live="polite">
+      <div class="secret-card">
+        <p>في أشياء ما بتنحكى...</p>
+        <p>بس بتنحس. ❤️</p>
+        <p>وهذه كانت واحدة منها.</p>
+        <button id="restartStory" class="secret-button">إعادة الحكاية</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
